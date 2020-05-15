@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quattrocento:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Quattrocento', serif;
+    font-weight: 400;
+    height: 100vh;
+}
+
+p {
+    font-size: 16pt;
+    line-height: 24pt;
+}
+
+/*NAVIGATION*/
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background-color: #D0E0D3;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around ;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid black;
+}
+
+/* TITLES */
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 75pt;
+    color: #74BAA0;
+}
+
+h2 {
+    font-family: 'Quattrocento', serif;
+    font-weight: 700;
+    font-size: 30pt;
+}
