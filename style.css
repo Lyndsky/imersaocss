@@ -180,7 +180,6 @@ section h2, div.about h2 {
     width: 240px;
     object-fit: cover;
     object-position: left;
-    padding: 10em;
 }
 
 @media (min-width: 1200px) {
