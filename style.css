@@ -1,38 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Muli:wght@400;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Quattrocento', serif;
+    font-family: 'Muli', serif;
+    color: #1E1824;
     font-weight: 400;
     height: 100vh;
+    font-size: 10px;
 }
 
-p {
-    font-size: 16pt;
-    line-height: 24pt;
+header {
+    flex-direction: column;
 }
-
-/*NAVIGATION*/
 
 a {
     text-decoration: none;
 }
 
+/*NAVIGATION*/
+
 .menu {
-    background-color: #D0E0D3;
+    background-color: white;
+    border-bottom: 1px solid #708ADA;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+header figure {
+    text-align: center;
+}
+
+.about {
+    margin: 13em 0 0 0;
+    padding: 4em;
+}
+
+.my {
+    padding-top: 130px;
+}
+
+.text-about {
+    font-size: 2em;
+    text-align: justify;
+    padding-bottom: 2em;
+    text-indent: 1.4em;
+}
+
+.my-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #1E1824;
+    border-radius: 75%;
+    margin-bottom: 10px;
 }
 
 .menu ul {
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
 }
 
 .menu li {
     list-style: none;
 }
 
-.menu li:hover {
-    border-bottom: 2px solid black;
+.menu a {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #708ADA;
+    padding: 1em 1.3em;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #708ADA;
+    color: white;
+    transition: 0.2s ease-in;
 }
 
 /* TITLES */
@@ -42,13 +91,141 @@ h1, h2 {
 }
 
 h1 {
-    font-family: 'Indie Flower', cursive;
-    font-size: 75pt;
-    color: #74BAA0;
+    font-family: 'Kanit', cursive;
+    font-size: 6.1em;
+    line-height: 0.9em;
+    color: #708ADA;
 }
 
 h2 {
-    font-family: 'Quattrocento', serif;
+    font-family: 'Muli', serif;
     font-weight: 700;
-    font-size: 30pt;
+}
+
+.site-subtitle {
+    font-size: 2.2em;
+}
+
+
+/* ABOUT 
+
+.about{
+    background-color: #EFEEEE;
+}
+
+.about-description {
+    font-size: 1.2em;
+    padding: 2em;
+    font-weight: 700;
+}
+
+.neuformic-ui {
+    width: 200px;
+    height: 200px;
+    background-color: #EFEEEE;
+    border-radius: 50px;
+    box-shadow: 16px 16px 14px 0 rgba(0, 0, 0, 0.06), -10px -10px 25px 0 rgb(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*/
+
+/*PORTFOLIO*/
+
+.portfolio {
+    padding-bottom: 3em;
+}
+
+.portfolio, .about {
+    background-color: #708ADA;
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .portfolio {
+        height: calc(100vh - 25em);
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 1.5em;
+    text-align: center;
+}
+
+
+@media (min-width: 560px) {
+    .grid {
+        grid-template-columns: repeat(2, 240px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 810px) {
+    .grid {
+        grid-template-columns: repeat(3, 240px);
+        justify-content: center;
+    }
+}
+
+section h2, div.about h2 {
+    font-size: 3.5em;
+    padding-bottom: 1em;
+}
+
+.portfolio-img {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left;
+    padding: 10em;
+}
+
+@media (min-width: 1200px) {
+    .portfolio-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* FOOTER */
+
+.content-footer {
+    background-color: white;
+    height: 15vh;
+    text-align: center;
+    padding: 2em;
+}
+
+@media (min-width: 737px) {
+    .content-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+    }
+}
+
+.img-icon {
+    width: 48px;
+    height: 48px;
+    margin: 2em;
+}
+
+p.footer {
+    font-size: 1.5em;
+    margin: 2em;
+}
+
+p.footer a {
+    color: black;
+    text-decoration: underline;
+}
+
+p.footer a:hover {
+    background-color: #708ADA;
+    color: white;
+    text-decoration: none;
 }
