@@ -178,10 +178,13 @@ figcaption,
     }
 }
 
-section h2,
-div.about h2 {
+section h2 {
     font-size: 3.5em;
     padding-bottom: 1em;
+}
+
+section.portfolio h2 {
+    padding-bottom: 2em;
 }
 
 .portfolio-img {
