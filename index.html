@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/028dd109c3.js" crossorigin="anonymous"></script>
     <title>Marcos Doriguetto</title>
 </head>
 
@@ -12,9 +13,9 @@
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Estudos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="my">
@@ -26,65 +27,75 @@
         </div>
     </header>
 
-    <section class="about">
-        <h2>About-me</h2>
-        <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque lorem, sodales
-            quis nunc nec, facilisis molestie dui. Nullam non purus a turpis commodo volutpat. Pellentesque
-            venenatis libero ut nisi dictum, ut egestas dui hendrerit. Etiam gravida, risus vel tempor ultrices,
-            justo metus vestibulum ante, lacinia fermentum nisi lectus elementum purus. Vivamus euismod, tortor non
-            tincidunt laoreet, nibh quam vehicula leo, eget lacinia quam nisl id ex. Sed semper sollicitudin nisl,
-            sed sollicitudin turpis sagittis eget. Nullam ac pharetra magna, at eleifend lacus. Phasellus dapibus
-            pharetra turpis vel molestie. Cras auctor cursus lacinia.</p>
+    <section class="about" id="sobre">
+        <div class="bg-color">
+            <h2>About-me</h2>
+            <p class="text-about">Oi, meu nome é <strong>Marcos Doriguetto</strong>, tenho 19 anos, atualmente moro em
+                Niterói-RJ e faço Análise e desenvolvimento de sistemas no Centro Universitário Carioca (Unicarioca).
+                Conheci
+                a
+                programação aos 16 anos, através de um amigo que na época era desenvolvedor, desde então
+                isso tem sido um divisor de águas na minha vida, onde na mesma eu encontrei algo que possa me preencher
+                pessoalmente e profissionalmente. Atualmente eu estudo <strong>C</strong> por conta da faculdade, e por
+                conta
+                própria tenho estudado as tecnologias principais da área Front-end(<strong>HTML, CSS, JS</strong>).</p>
+            <h3>Coisas que amo fazer</h3>
+            <div class="grid">
+                <div>
+                    <div class="neuformic-ui">
+                        <i class="fas fa-hamburger icon"></i>
+                    </div>
+                    <p class="love-it">Cozinhar</p>
+                </div>
+                <div>
+                    <div class="neuformic-ui">
+                        <i class="fas fa-comments icon"></i>
+                    </div>
+                    <p class="love-it">Conversar</p>
+                </div>
+                <div>
+                    <div class="neuformic-ui">
+                        <i class="fab fa-spotify icon"></i>
+                    </div>
+                    <p class="love-it">Ouvir música</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Próximos estudos</h2>
         <div class="grid">
             <figure>
-                <img class="portfolio-img" src="./cooking.jpg" alt="">
-                <figcaption></figcaption>
+                <img class="portfolio-img" src="./html.jpg" alt="">
+                <figcaption>Next level Week</figcaption>
             </figure>
 
             <figure>
-                <img class="portfolio-img" src="./cooking.jpg" alt="">
-                <figcaption>COMING</figcaption>
+                <img class="portfolio-img" src="./JavaScript.jpg" alt="">
+                <figcaption>JavaScript(Rocketseat)</figcaption>
             </figure>
 
             <figure>
-                <img class="portfolio-img" src="./cooking.jpg" alt="">
-                <figcaption>COMING</figcaption>
+                <img class="portfolio-img" src="./nodejs.jpg" alt="">
+                <figcaption>NodeJS(Erick Wendel)</figcaption>
+            </figure>
+
+            <figure>
+                <img class="portfolio-img" src="./reactjs.jpg" alt="">
+                <figcaption>ReactJS(Rocketseat)</figcaption>
             </figure>
         </div>
     </section>
 
-    <section class="portfolio">
-        <h2>Portfólio</h2>
-        <div class="grid">
-            <figure>
-                <img class="portfolio-img" src="./cooking.jpg" alt="">
-                <figcaption>COMINGCOMINGCOMINGCOMINGCOMING</figcaption>
-            </figure>
-
-            <figure>
-                <img class="portfolio-img" src="./cooking.jpg" alt="">
-                <figcaption>COMING</figcaption>
-            </figure>
-
-            <figure>
-                <img class="portfolio-img" src="./cooking.jpg" alt="">
-                <figcaption>COMING</figcaption>
-            </figure>
-
-            <figure>
-                <img class="portfolio-img" src="./cooking.jpg" alt="">
-                <figcaption>COMING</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <footer class="content-footer">
+    <footer class="content-footer" id="contato">
         <p class="footer">Esse site foi construído durante a <a
                 href="https://www.alura.com.br/imersao-css"><strong>Imersão CSS da alura</strong>😻</a></p>
         <div style="margin-bottom: 1.5em; margin-right: 1.5em;">
-            <a href=""><img class="img-icon" src="./twitter.png" alt=""></a>
-            <a href=""><img class="img-icon" src="./github.png" alt=""></a>
-            <a href=""><img class="img-icon" src="./discord.png" alt=""></a>
+            <a href="https://twitter.com/marcosdori"><img class="img-icon" src="./twitter.png" alt="Twitter"></a>
+            <a href="https://github.com/Lyndsky"><img class="img-icon" src="./github.png" alt="Github"></a>
+            <a href="https://discord.gg/n2pFmfx"><img class="img-icon" src="./discord.png" alt="Discord"></a>
         </div>
     </footer>
 
