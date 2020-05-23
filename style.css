@@ -85,6 +85,12 @@ header figure {
     display: block;
 }
 
+@media (max-width: 380px) {
+    .menu a {
+        font-size: 1.5em;
+    }
+}
+
 .menu a:hover {
     background-color: #3A4A7D;
     color: white;
