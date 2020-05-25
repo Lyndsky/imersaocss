@@ -82,10 +82,12 @@ header figure {
 
 .menu ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100vw;
 }
 
 .menu li {
+    width: 33vw;
     list-style: none;
 }
 
