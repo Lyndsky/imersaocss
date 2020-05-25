@@ -106,7 +106,8 @@ header figure {
 }
 
 .menu a:hover {
-    text-shadow: 1px 1px 1px #484848;
+    background-color: #3A4A7D;
+    color: white;
 }
 
 /* TITLES */
