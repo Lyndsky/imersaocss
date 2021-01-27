@@ -1,4 +1,4 @@
 # imersaocss
 Curso
 
-https://lyndsky.github.io/imersaocss/
+https://marcosdoriguetto.github.io/imersaocss/
